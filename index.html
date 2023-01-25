@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive card details form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Completed state start -->
+
+    <div class="container">
+      <div class="backGround">
+        <img class="desk" src="images/bg-main-desktop.png" alt="">
+        <div class="visa-front">
+          <img src="images/bg-card-front.png" alt="visa-front">
+          <div class="text">
+            <div class="pic"></div>
+            <p class="numberCard">0000-0000-0000-0000</p>
+            <div class="nameDate">
+              <span class="namePerson">John Doo</span>
+              <div class="date">
+                <span class="mm">00</span>
+                <span>/</span>
+                <span class="yy">00</span>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="visa-back">
+          <img src="images/bg-card-back.png" alt="visa-back">
+          <div class="text">
+            <span class="cardCvv">000</span>
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="conte"> 
+          <p>Name</p>
+          <input id="nameCard" type="text" placeholder="name">
+          <span class="wrong name">plese write you name correct</span>
+          <p>Number Card</p>
+          <input id="numberCard" type="text" placeholder="number Card" maxlength="19">
+          <span class="wrong number">plese write Number card correct</span>
+          <div class="data">
+            <div class="inputExpier">
+              <p>EXP DATE(MM/YY)</p>
+              <div class="dateFild">
+                <input class="month" type="number" placeholder="MM" maxlength="2" min="0" max="12">
+                <input class="year" type="number" placeholder="YY"  maxlength="2" min="19" max="27">
+              </div>
+            </div>
+            <div class="cvv">
+              <p>Cvv</p>
+              <input class="inpCvv" type="text" placeholder="Cvv" maxlength="3" >
+            </div>
+          </div>
+          <span class="wrong monthMg">plese write month correct</span>
+          <span class="wrong yearMg">plese write year correct</span>
+          <span class="wrong cvvMg">plese write cvv correct</span>
+          <button class="btnSub" type="submit">confirm</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/MostafaGhonim">Mostafa Ghonim</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
